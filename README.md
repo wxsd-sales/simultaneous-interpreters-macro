@@ -1,19 +1,22 @@
 
 # Simultaneous Interpreters Macro
 
-Example macro which adds devices to a Webex Meeting when Simultaneous Interpreters are present and automaticallymake the additional devices select specific audio channel languages.
+Example macro which adds Auxiliary Webex Devices to a Webex Meeting when the Main Device detects Simultaneous Interpreters are present. Once the Auxiliary Device join the meeting, the macro automatically selects a preconfigured specific Simultaneous Interpreters audio language.
 
-This is useful for when you want to output the Simultaneous Interpreters audio to seperate 
+This is useful for when you want to output the Simultaneous Interpreters audio to separate in room audio headsets and keep the main device outputting the floor audio for the meeting.
+
+
 ![Solution Overview](images/simultaneous-interpreters.png)
 
 
 ## Overview
 
-When the main device joins a Webex Meeting and detects there are Simultaneous Interpreters, it will share the Webex Meeting information to the configured Auxiliar devices for them to join the same meeting.
+When the main device joins a Webex Meeting and detects there are Simultaneous Interpreters, it will share the Webex Meeting information to the configured Auxiliary devices for them to join the same meeting.
 
 If the main device happens to Participant Add capabilities, the macro will instead try to add the Aux devices using this approach.
 
-Once the Auxiliary devices join the meeting, they too will check which Simultaneous Interpeters are available. If the macro identify the language channel they have been assigned in the macros config, it will selete that language and set the mixer level to 100%. 
+Once the Auxiliary devices join the meeting, they too will check which Simultaneous Interpreters are available. If the macro identify the language channel they have been assigned in the macros config, it will select that language and set the mixer level to 100%.
+
 
 ## Setup
 
@@ -42,7 +45,7 @@ All contents are licensed under the MIT license. Please see [license](LICENSE) f
 
 ## Disclaimer
 
- Everything included is for demo and Proof of Concept purposes only. Use of the site is solely at your own risk. This site may contain links to third party content, which we do not warrant, endorse, or assume liability for. These demos are for Cisco Webex usecases, but are not Official Cisco Webex Branded demos.
+ Everything included is for demo and Proof of Concept purposes only. Use of the site is solely at your own risk. This site may contain links to third party content, which we do not warrant, endorse, or assume liability for. These demos are for Cisco Webex use cases, but are not Official Cisco Webex Branded demos.
 
 
 ## Questions
